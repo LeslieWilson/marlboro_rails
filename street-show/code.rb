@@ -29,14 +29,26 @@
 # else puts "I don't know who you are"
 # end
 
-require 'pry'
-print "whats your lucky number? "
-input= gets.chomp
+# require 'pry'
+# print "whats your lucky number? "
+# input= gets.chomp
+#
+# # binding.pry
+#
+# if input.to_i % 2 == 0
+#     puts "that's a great lucky number"
+# else
+#     puts "not lucky"
+# end
 
-# binding.pry
-
-if input.to_i % 2 == 0
-    puts "that's a great lucky number"
+puts "would you like to roll the dice? "
+input = gets.chomp
+if input == "yes"
+    dice1 = rand(6) + 1
+    dice2 = rand(6) + 1
+    total = dice1 + dice2
+    print "you rolled : "
+    puts total
 else
-    puts "not lucky"
+    puts "ok I won't"
 end

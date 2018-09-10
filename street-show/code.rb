@@ -1,21 +1,42 @@
 # YOUR CODE GOES HERE
 
-Knife_Juggling = 11.87
-Torch_Juggling = 16.5
-Hand_Balancing = 3.00
-Human_Blockhead = 1.18
+# Knife_Juggling = 11.87
+# Torch_Juggling = 16.5
+# Hand_Balancing = 3.00
+# Human_Blockhead = 1.18
+#
+#
+# sum = Knife_Juggling + Torch_Juggling + Hand_Balancing + Human_Blockhead
+#
+# average = sum/12
+#
+#
+#
+#
+# puts "Hello everyone my assistant will help us run this show. Whats your name dude?"
+# name = gets.chomp
+# puts "ok cool interesting!kh and whats your fav numeber?"
+# number = gets.chomp
+#
+# puts "sweet!"
 
+# puts "whats your name? "
+# input = gets.chomp
+# if input == "richard"
+#     puts "hello, richard"
+# elsif input == "suzy"
+#     puts "hello suzy"
+# else puts "I don't know who you are"
+# end
 
-sum = Knife_Juggling + Torch_Juggling + Hand_Balancing + Human_Blockhead
+require 'pry'
+print "whats your lucky number? "
+input= gets.chomp
 
-average = sum/12
+# binding.pry
 
-
-
-
-puts "Hello everyone my assistant will help us run this show. Whats your name dude?"
-name = gets.chomp
-puts "ok cool interesting!kh and whats your fav numeber?"
-number = gets.chomp
-
-puts "sweet!"
+if input.to_i % 2 == 0
+    puts "that's a great lucky number"
+else
+    puts "not lucky"
+end

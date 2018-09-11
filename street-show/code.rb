@@ -41,14 +41,22 @@
 #     puts "not lucky"
 # end
 
-puts "would you like to roll the dice? "
-input = gets.chomp
-if input == "yes"
-    dice1 = rand(6) + 1
-    dice2 = rand(6) + 1
-    total = dice1 + dice2
-    print "you rolled : "
-    puts total
-else
-    puts "ok I won't"
+
+# dinner_total = 178
+# tip_expected = 0.2
+# tip = dinner_total*tip_expected
+#
+# puts "you should tip #{tip_expected}"
+# puts "the total bill is #{dinner_total}"
+# puts "your tip then is #{tip}"
+
+require 'pry'
+puts "what activity would you like to do?"
+binding.pry
+if (rand(4)) == 1
+    puts "ok jetskiing"
+elsif (rand(4)) == 2
+    puts "ok animals!"
+elsif (rand(4)) == 3
+    puts "kk sailing"
 end

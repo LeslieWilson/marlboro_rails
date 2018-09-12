@@ -50,13 +50,27 @@
 # puts "the total bill is #{dinner_total}"
 # puts "your tip then is #{tip}"
 
-require 'pry'
-puts "what activity would you like to do?"
-binding.pry
-if (rand(4)) == 1
-    puts "ok jetskiing"
-elsif (rand(4)) == 2
-    puts "ok animals!"
-elsif (rand(4)) == 3
-    puts "kk sailing"
-end
+# require 'pry'
+# puts "what activity would you like to do?"
+# binding.pry
+# if (rand(4)) == 1
+#     puts "ok jetskiing"
+# elsif (rand(4)) == 2
+#     puts "ok animals!"
+# elsif (rand(4)) == 3
+#     puts "kk sailing"
+# end
+
+# location = "bind".index("n")
+# if location.nil?
+#     puts "not there"
+# else
+#     puts "location is: #{location}"
+# end
+
+# bin = 20
+# if bin && bin >= 20
+#     puts "yes"
+# else
+#     puts "no"
+# end

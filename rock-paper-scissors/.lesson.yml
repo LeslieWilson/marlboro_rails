@@ -1,0 +1,7 @@
+---
+title: "Rock, Paper, Scissors"
+type: "challenge"
+description: "Rock...Paper...Scissors...Code!"
+tags: "ignition"
+ignore:
+- "rock-paper-scissors.md"

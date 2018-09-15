@@ -4,17 +4,11 @@ puts "this is a game of rock paper scissors. type 'start'"
 input = gets.chomp
 if input == "start"
 puts "player input your number! 1 for paper, 2 for scissors, 3 for rock"
-
-
 player_roll = gets.chomp
 computer_roll = rand(3)+1
-
 end
-#
 while computer_roll == 1 && player_roll == 1
     puts "you both got rock"
-
-
 if computer_roll == 1 && player_roll == 1
     puts "#{player_roll}: #{computer_roll} comp got rock, player got rock, tie!"
 elsif computer_roll == 2 && player_roll == 2

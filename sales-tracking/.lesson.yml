@@ -1,0 +1,7 @@
+---
+title: "Sales Tracking"
+type: "exercise"
+description: "writing a while loop that tracks sales input until reaching $100!"
+tags: "loops"
+ignore:
+- "sales-tracking.md"

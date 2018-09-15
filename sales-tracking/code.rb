@@ -57,24 +57,46 @@
 # checking multiple conditionals to see if the loop should continue
 # run while loop prompting user for input while either the tax or registration is due
 
-tax_due = true
-reg_due = true
+# require 'pry'
+# tax_due = true
+# reg_due = true
+#
+# while (tax_due || reg_due) do
+#     if tax_due
+#         puts "please pay taxes (y/n)"
+#         payment = gets.chomp
+#         binding.pry
+#         if payment == "y"
+#             tax_due = false
+#             puts "thank you for payment"
+# end
+# else
+#     puts "please pay registration (y/n)"
+#     payment = gets.chomp
+#     binding.pry
+#     if payment == "y"
+#         reg_due = false
+#         puts "ok you're all squared away"
+#
+#     end
+# end
+# end
 
-while (tax_due || reg_due) do
-    if tax_due
-        puts "please pay taxes (y/n)"
-        payment = gets.chomp
-        if payment == "y"
-            tax_due = false
-            puts "thank you for payment"
-end
-else
-    puts "please pay registration (y/n)"
-    payment = gets.chomp
-    if payment == "y"
-        reg_due = false
-        puts "ok you're all squared away"
 
-    end
-end
+# print "provide a character"
+# character = gets.chomp
+#
+# if "aeiou".index(character)
+#
+#     puts "its a vowel"
+# else
+#     puts "its not a vowel"
+#
+# end
+
+print "do you want to continue(y/n)"
+character = gets.chomp
+if character != 'y' && character !='n'
+# if "yn".index(character).nil?
+    puts "please specify"
 end

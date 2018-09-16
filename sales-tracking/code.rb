@@ -94,9 +94,51 @@
 #
 # end
 
-print "do you want to continue(y/n)"
-character = gets.chomp
-if character != 'y' && character !='n'
-# if "yn".index(character).nil?
-    puts "please specify"
+# print "do you want to continue(y/n)"
+# character = gets.chomp
+# if character != 'y' && character !='n'
+# # if "yn".index(character).nil?
+#     puts "please specify"
+# end
+
+# require 'pry'
+#
+# puts "provide a character, if you hit y we will add numbers together, no, we will scold you, and anything other than that, you're done with the program"
+# character = gets.chomp
+#
+# while character != 'y' && character != 'n'
+#     puts "please specify 'y' or 'n'"
+#     character = gets.chomp
+# end
+#
+# if character == 'y'
+#     puts "ok we're going to add two numbers for you"
+#     print "whats the first number?"
+#     number_1 = gets.chomp
+#     binding.pry
+#     print "ok! whats the second number"
+#     number_2 = gets.chomp
+#
+#     puts "the sum in #{number_1.to_i + number_2.to_i}"
+# elsif character == 'n'
+#     puts "you put a different number in"
+# end
+require 'pry'
+puts "give me your numbers!"
+total = 0.0
+input = gets.chomp.to_f
+
+while input < 100 do
+    total = total + input
+    binding.pry
 end
+puts "you're at 100!"
+
+ puts "you've reached 100!"
+    if total >= 125
+        twenty_five_mores = ((total - 100)/25).to_i
+        twenty_five_mores.times do
+            puts "you've earned another 25!"
+
+        end
+    end

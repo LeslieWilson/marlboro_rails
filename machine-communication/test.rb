@@ -1,11 +1,21 @@
+require 'pry'
 
 
+puts "hi, what do you want today"
+input_1 = gets.chomp
+puts "how many do you want"
+input_2 = gets.chomp
+sum = gets.chomp.to_i
+random = rand(14)+1
+binding.pry
 
+if input_2 == "tons"
+print "#{input}\n" * random
+elsif sum != "tons"
+    print "#{input}\n" * sum
+puts "ok! come again"
 
-
-
-
-
+end
 
 
 
@@ -28,14 +38,14 @@
 
 
 
-
+#
 # sum = 0
-# number = number
+#
 #
 # while sum < 100
 #     sum += 1
-#     if number % 2 != 0
-#         puts "{#sum}"
+#     if sum % 2 != 0
+#         puts "#{sum}"
 #
 # end
 # end

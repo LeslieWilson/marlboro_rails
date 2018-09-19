@@ -1,3 +1,3 @@
-Some basic Rspec tests I practiced getting to pass, like this one:
+Some basic Rspec tests like this:
 
 ![Rspec Example](./RspecTests/picture.png)

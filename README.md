@@ -1,3 +1,3 @@
-Some basic Rspec tests like this:
+basic tests like this
 
 ![Rspec Example](./RspecTests/picture.png)

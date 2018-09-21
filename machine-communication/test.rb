@@ -1,18 +1,16 @@
-require 'pry'
-
 
 puts "hi, what do you want today"
 input_1 = gets.chomp
 puts "how many do you want"
 input_2 = gets.chomp
-sum = gets.chomp.to_i
+sum = input_2.to_i
 random = rand(14)+1
-binding.pry
+
 
 if input_2 == "tons"
-print "#{input}\n" * random
+print "#{input_1}\n" * random
 elsif sum != "tons"
-    print "#{input}\n" * sum
+    print "#{input_1}\n" * sum
 puts "ok! come again"
 
 end

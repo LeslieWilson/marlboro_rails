@@ -1,0 +1,7 @@
+---
+title: "Guessing Game"
+type: "challenge"
+description: "Building a game using random numbers"
+tags: "challenge"
+ignore:
+- "guessing-game.md"

@@ -7,7 +7,7 @@ sum = input_2.to_i
 random = rand(14)+1
 
 
-if input_2 == "tons"
+if input_2.index('tons') != nil
 print "#{input_1}\n" * random
 elsif sum != "tons"
     print "#{input_1}\n" * sum

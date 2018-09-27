@@ -1,19 +1,68 @@
+# require 'pry'
+#
+# possible_items = ['old paperback', 'potato', 'red onion', 'dried lemon', 'medicinal herbs', 'saffron']
+# new_list = []
+#
+#
+# puts "what do you want in your cart? type 'finished' to finish"
+# pick = gets.chomp
+# new_list << pick
+#
+#
+# while possible_items.index(pick) != nil
+#     puts "that works! anything else? hit 'finished' to finish"
+#     pick = gets.chomp
+#     new_list << pick
+#
+# if possible_items.index(pick) == nil
+#     puts "that's not on the list. select again?"
+#     new_list.delete(pick)
+#     pick = gets.chomp
+#     new_list << pick
+#     binding.pry
+# if pick == 'finished'
+#     break
+# end
+# end
+# end
+#
+#
+#
 
 
 
 
-numbers = [2,3,4,6,3,4,2,4]
-numbers.sort!
-
-
-
-numbers.inject(0) do |sum, num|
-    sum += num
 
 
 
 
 
+
+
+
+
+
+
+#
+#
+#
+#
+# numbers = [2,3,4,6,3,4,2,4]
+# numbers.sort!
+#
+#
+#
+# sum = numbers.inject(0) do |sum, num|
+#     sum += num
+#
+# end
+#
+# puts sum
+#
+#
+#
+#
+#
 #
 #
 #
@@ -25,10 +74,10 @@ numbers.inject(0) do |sum, num|
 # end
 #
 # puts greeting.inspect
-
-
+#
+#
 # used the map operation to do the same thing I could do with an each block
-
+#
 # numbers = [2,3,4,5,3,2]
 #
 #
@@ -36,11 +85,11 @@ numbers.inject(0) do |sum, num|
 #     num * 2
 # end
 # puts doubled_array.inspect
-
-
-
-
-
+#
+#
+#
+#
+#
 # numbers = [2,3,4,5,3,2]
 #
 # doubled_array = []
@@ -50,25 +99,25 @@ numbers.inject(0) do |sum, num|
 # end
 #
 # puts doubled_array.inspect
+#
 
 
-
-
+#
 # instructors = ['dan', 'dt', 'jarvis']
 #
 # not_d_instructors = instructors.reject do |instructor|
 #      instructor[0] == "d"
 # end
 # puts not_d_instructors.inspect
-
-
+#
+#
 # instructors = ['dan', 'dt', 'jarvis']
 #
 # d_instructors = instructors.select do |instructor|
 #      instructor[0] == "d"
 # end
 # puts d_instructors.inspect
-
+#
 # instructors = ['dan', 'dt', 'jarvis']
 #
 # d_instructors = instructors.find_all do |instructor|

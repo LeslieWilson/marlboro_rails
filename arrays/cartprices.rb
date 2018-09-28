@@ -1,4 +1,4 @@
-prices = []
+
 
 while true
     puts "whats the price of thing"

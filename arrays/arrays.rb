@@ -1,3 +1,52 @@
+
+
+possible_items = ['old paperback', 'potato', 'red onion', 'dried lemon', 'medicinal herbs', 'saffron']
+
+puts "here is a list of items you can buy"
+
+possible_items.each do |item|
+    puts "#{item}"
+end
+
+
+pick = " "
+shopping_cart = []
+# dont_have = []
+
+
+while true
+puts "what do you want to buy"
+pick = gets.chomp
+
+if pick == 'finished'
+    break
+elsif possible_items.include?(pick)
+    shopping_cart << pick
+else
+    puts "sorry don't have it"
+    # dont_have << pick
+end
+end
+
+
+puts "here is a list of items in your cart"
+shopping_cart.each do |item|
+    puts "#{item}"
+end
+
+
+#     puts "btw we noticed you put these items in there, we'll let you know if we have them"
+#     puts dont_have.each do |item|
+#         puts "#{item}"
+# end
+
+
+
+
+
+
+
+#
 # require 'pry'
 #
 # possible_items = ['old paperback', 'potato', 'red onion', 'dried lemon', 'medicinal herbs', 'saffron']
@@ -13,21 +62,19 @@
 #     puts "that works! anything else? hit 'finished' to finish"
 #     pick = gets.chomp
 #     new_list << pick
-#
-# if possible_items.index(pick) == nil
+# if
+#     possible_items.index(pick) == nil
 #     puts "that's not on the list. select again?"
 #     new_list.delete(pick)
 #     pick = gets.chomp
 #     new_list << pick
-#     binding.pry
-# if pick == 'finished'
-#     break
+#
 # end
 # end
-# end
-#
-#
-#
+
+
+
+
 
 
 

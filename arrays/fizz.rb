@@ -1,18 +1,11 @@
 my_numbers = []
 
-
 counter = 0
 while counter < 100
 added_counter = counter +=1
 my_numbers << added_counter
 
 end
-
-
-
-
-
-
 my_numbers = my_numbers.map do |number|
     if
         (number % 5 == 0) && (number % 3 == 0)

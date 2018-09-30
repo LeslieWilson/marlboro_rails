@@ -1,0 +1,7 @@
+---
+title: "Crypt of Civilization"
+type: "exercise"
+description: "Introduction to manipulating arrays in Ruby"
+tags: "arrays"
+ignore:
+- "crypt-of-civilization.md"

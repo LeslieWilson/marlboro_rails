@@ -1,0 +1,7 @@
+---
+title: "Petflix Night"
+type: "exercise"
+description: "Search a list of Pet Shows"
+tags: "arrays, searching"
+ignore:
+- "petflix-night.md"

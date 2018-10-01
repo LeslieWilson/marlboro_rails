@@ -8,16 +8,30 @@ trains.each do |t|
     w.tr!("\n", '')
   end
 end
-print trains
+
+
+
+
 
 
 puts "what time are you leaving? "
-leaving = gets.chomp.to_i
-
-
+leaving = gets.chomp.to_f
 
 if leaving <= 2
-    puts "ok take "
+    puts "ok take #{trains[0][0]} leaving at #{trains[0][1]}"
+elsif leaving <= 5
+    puts "ok take #{} leaving at #{}"
+elsif leaving <= 7#{}
+    puts "take #{} leaving at #{}"
+elsif leaving <= 8.5
+    puts "take #{} leaving at #{}"
+elsif leaving <= 9
+    puts "take #{} leaving at #{}"
+elsif leaving <=10
+    puts "take #{} leaving at #{}"
+elsif leaving <= 11.5
+    puts "take #{} leaving at #{}"
+end
 
 
 # trains.each do |t|

@@ -1,0 +1,5 @@
+---
+title: "Method Testing and Test Driven Development"
+type: "article"
+description: "Describes how to test methods using RSpec."
+tags: "tdd, unit-testing, rspec, refactoring"

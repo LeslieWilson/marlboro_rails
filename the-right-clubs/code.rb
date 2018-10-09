@@ -24,11 +24,10 @@ puts "use the #{n}!"
 
 end
 
+missing_clubs = possible_club_s
 
-the_rest = :putter
-
-if possible_club_selections.include?(the_rest) == false
-puts "#{the_rest} is not included in your bag!"
+if possible_club_selections.include?(:putter || :driver || :sand_wedge) == false
+puts "#{} is not included in your bag!"
 end
 
 

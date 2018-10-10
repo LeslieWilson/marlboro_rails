@@ -45,10 +45,25 @@ hash = {}
 container.each do |i|
     if i.length == 2
 
-    hash[i[0]] = [i[1]]
+    hash[i[0]] = [i[1].to_i]
 else
-    hash[i[0]+ "_"+i[1]] = [i[2]]
+    hash[i[0]+ "_"+i[1]] = [i[2].to_i]
 
 end
 end
-print hash
+
+puts "how far away are you"
+input = gets.chomp.to_i
+
+sum = 0
+hash.values.each do |n|
+    if input >= n[0]
+        print n[0]
+    end
+end
+print sum
+# if input <= hash.values
+#     print "use the #{hash.values}"
+# end
+# end
+# print hash.values

@@ -28,7 +28,7 @@ end
 
 stuff_looking_for = [:putter,:driver,:sand_wedge]
 stuff_looking_for.each do |n|
-if possible_club_selections.exclude?(n)
+if possible_club_selections.include?(n) == false
 puts "#{n} is not included in your bag!"
 
 end

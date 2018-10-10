@@ -55,13 +55,20 @@ end
 puts "how far away are you"
 input = gets.chomp.to_i
 
-sum = 0
+newArray = []
+
 hash.values.each do |n|
     if input >= n[0]
-        print n[0]
+        newArray << [n[0]]
+
     end
+
 end
-print sum
+puts "youre #{newArray[0].to_s.gsub("[", "").gsub("]", "")} feet away! you should use the #{hash.key(newArray[0])}!"
+
+# string = {newArray[0].to_s}
+# string.gsub(/"[" | "]"/){|m| string|m|}
+
 # if input <= hash.values
 #     print "use the #{hash.values}"
 # end

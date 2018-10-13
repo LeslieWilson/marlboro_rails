@@ -13,20 +13,20 @@
 # "sand_Wedge" => 20,
 # "putter"=>0}
 #
-# driver 200
-# four wood 180
-# five wood 170
-# two iron 170
-# three iron 160
-# four iron 150
-# five iron 140
-# six iron 130
-# seven iron 120
-# eight iron 110
-# nine iron 95
-# pitching wedge 80
-# sand Wedge 20
-# putter 0
+driver 200
+four wood 180
+five wood 170
+two iron 170
+three iron 160
+four iron 150
+five iron 140
+six iron 130
+seven iron 120
+eight iron 110
+nine iron 95
+pitching wedge 80
+sand Wedge 20
+putter 0
 
 
 container = []
@@ -34,11 +34,6 @@ File.open('golfclubs.txt').each do |line|
     split_lines = line.split(" ")
     container << split_lines
 
-# split_lines.each do |l|
-#
-#
-#
-#  end
 end
 
 hash = {}

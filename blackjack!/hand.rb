@@ -1,6 +1,6 @@
-require_relative 'deck.rb'
-require_relative 'card.rb'
-require_relative 'hand.rb'
+require_relative 'deck'
+require_relative 'card'
+
 
 
 class Hand
@@ -15,12 +15,10 @@ class Hand
         puts "hit or stand? (choose 'hit' or 'stand')"
         hORs_input = gets.chomp.downcase
         if hORs_input == 'hit'
-            puts "another card"
+            puts "#{@dealt_card} was added to your deck"
         end
     end
 end
-
-
 
 
 hand = Hand.new(3,5)

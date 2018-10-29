@@ -1,7 +1,4 @@
 require_relative 'card'
-
-
-
 class Deck
     attr_accessor :deck_o_cards
     def initialize
@@ -22,8 +19,6 @@ def deal!(card)
     puts "dealer was dealt #{@dealt_card} card"
 end
 end
-
-
 
 end
 

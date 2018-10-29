@@ -1,7 +1,7 @@
 require_relative 'card'
 
 class Deck
-    attr_accessor :deck_o_cards, :deal
+    attr_accessor :deck_o_cards
     def initialize
         suites = ['c','h','s']
         ranks = ['a', 2, 3, 4,'j']
@@ -14,18 +14,14 @@ class Deck
         @deck_o_cards.shuffle!
     end
 
-def deal(card)
-    @dealt_card = @deck_o_cards.pop do |card|
-    puts "player was delt #{@dealt_card}card"
-    puts "dealer was dealt #{@dealt_card} card"
+def deal
+    @dealt_card = @deck_o_cards.pop
 end
 end
 
-end
 
 
-deck = Deck.new
-deck.deal(1)
+
 
 
 

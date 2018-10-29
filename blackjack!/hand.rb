@@ -11,24 +11,14 @@ class Hand
     end
 
 
-    def player_hits
-        puts "hit or stand? (choose 'hit' or 'stand')"
-        hORs_input = gets.chomp.downcase
-        if hORs_input == 'hit'
-            puts "#{@dealt_card} was added to your deck"
-        end
-    end
+def display_score
+    dispays the players score each time they need to hit or stand
+    outputs player score: SCORE on a seperate line
+    aces shoudl count as one or 11, whichever is closet to 21 without going over
+end
+
+def add_card(card)
 end
 
 
-hand = Hand.new(3,5)
-hand.player_hits()
-
-
-
-
-# def display_score
-#     dispays the players score each time they need to hit or stand
-#     outputs player score: SCORE on a seperate line
-#     aces shoudl count as one or 11, whichever is closet to 21 without going over
-# end
+end

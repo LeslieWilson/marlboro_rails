@@ -1,4 +1,32 @@
 require_relative 'deck'
+require_relative 'hand'
+require_relative 'card'
+
+puts "would you like to play blackjack? (y/n)"
+start = gets.chomp
+if start == 'y'
+    new_deck = Deck.new
+    new_deck.deal
+    player_hand = Hand.new(new_deck.deal, new_deck.deal)
+    puts "you have an #{player_hand.card_1.suite} and #{player_hand.card_1.rank} and a #{player_hand.card_2.suite} and #{player_hand.card_2.rank}  in your hand"
+end
+
+
+
+# new_deck = Deck.new
+# print new_deck.deck_o_cards
+# new_card = new_deck.deal
+# puts "lkjefhlaskjdfhslakjfhdas"
+# print new_deck.deck_o_cards
+# puts new_card.suite
+
+
+
+
+
+
+
+#deal them a hand new_deck.deal gives me a card and need to tell them whats in their hand.
 
 #deal logic
 # Deal initial hand

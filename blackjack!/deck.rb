@@ -3,8 +3,8 @@ require_relative 'card'
 class Deck
     attr_accessor :deck_o_cards
     def initialize
-        suites = ['c','h','s']
-        ranks = ['a', 2, 3, 4,'j']
+        suites = ['clubs','hearts','spades', 'diamonds']
+        ranks = ['a', 2, 3, 4,5,6,7,8,9,10,'j', 'q', 'k']
         @deck_o_cards = []
         suites.each do |suite|
             ranks.each do |rank|

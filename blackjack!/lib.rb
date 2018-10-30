@@ -8,8 +8,12 @@ if start == 'y'
     new_deck = Deck.new
     new_deck.deal
     player_hand = Hand.new(new_deck.deal, new_deck.deal)
-    puts "you have an #{player_hand.card_1.suite} and #{player_hand.card_1.rank} and a #{player_hand.card_2.suite} and #{player_hand.card_2.rank}  in your hand"
+    puts "you have an #{player_hand.card_1.rank} of #{player_hand.card_1.suite} and a #{player_hand.card_2.rank} of #{player_hand.card_2.suite} in your hand"
+    player_score = player_hand.display_score
+    puts "#{player_score}"
+
 end
+
 
 
 

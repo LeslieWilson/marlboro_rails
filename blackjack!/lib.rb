@@ -12,9 +12,17 @@ if start == 'y'
     player_score = player_hand.display_score
     puts "#{player_score}"
 
+    puts 'hit or stand?'
+    answer = gets.chomp
+    if answer == 'hit'
+        new_card = new_deck.deal
+        added_hand = player_hand.add_card(new_card)
+        puts "you were delt a #{new_card.rank} of #{new_card.suite} "
+
+end
 end
 
-
+# ask them if they will hit or stand and handle for if they hit, which means dealing a new card in their hand and telling them what the new card is and calculating the new score.
 
 
 # new_deck = Deck.new

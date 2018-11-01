@@ -14,4 +14,6 @@ class Card
         ['j', 'q', 'k'].include?(@rank)
     end
 
+
+
 end

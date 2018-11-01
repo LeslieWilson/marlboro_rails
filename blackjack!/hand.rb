@@ -1,31 +1,45 @@
 require_relative 'deck'
 require_relative 'card'
 
-
-
 class Hand
     attr_accessor :card_1, :card_2
     def initialize(card_1, card_2)
         @card_1 = card_1
         @card_2 = card_2
+        @hand_array = [@card_1, @card_2]
+
     end
 
-
+    def add_card(card)
+        @hand_array << card
+    end
 
     def display_score
         sum = 0
-        if @card_1.face_card? == false && @card_2.face_card? == false
-        sum = @card_1.rank + @card_2.rank
-        end
 
+        if @card_1.face_card? == false
+        sum =+ @card_1.rank
+    end
+
+        if @card_2.face_card? == false
+        sum =+ @card_2.rank
+    end
+        if @card_1.face_card? == true
+            sum += 10
+    end
+        if @card_2.face_card? == true
+            sum += 10
+    end
 #ace logic
         if @card_1.rank = 'a' || if @card_2.rank = 'a'
             if sum <= 10
                     sum = sum += 11
                 else
                     sum = sum += 1
-            end
+
         end
+        end
+        return sum
         end
 
     end

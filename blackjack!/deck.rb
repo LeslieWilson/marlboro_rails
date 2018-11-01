@@ -1,7 +1,7 @@
 require_relative 'card'
 
 class Deck
-    attr_accessor :deck_o_cards
+    attr_accessor :deck_o_cards, :deal
     def initialize
         suites = ['clubs','hearts','spades', 'diamonds']
         ranks = ['a', 2, 3, 4,5,6,7,8,9,10,'j', 'q', 'k']
@@ -15,8 +15,13 @@ class Deck
     end
 
 def deal
-    @dealt_card = @deck_o_cards.pop
+    dealt_card = @deck_o_cards.pop
 end
+
+
+
+
+# ask them if they will hit or stand and handle for if they hit, which means dealing a new card in their hand and telling them what the new card is and calculating the new score.
 end
 
 

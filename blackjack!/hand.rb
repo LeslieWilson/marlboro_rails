@@ -16,37 +16,21 @@ class Hand
 
     def display_score
         sum = 0
-
-        if @card_1.face_card? == false
-        sum =+ @card_1.rank
-    end
-
-        if @card_2.face_card? == false
-        sum =+ @card_2.rank
-    end
-        if @card_1.face_card? == true
-            sum += 10
-    end
-        if @card_2.face_card? == true
-            sum += 10
-    end
-#ace logic
-        if @card_1.rank = 'a' || if @card_2.rank = 'a'
-            if sum <= 10
-                    sum = sum += 11
-                else
-                    sum = sum += 1
-
-        end
-        end
-        return sum
+        @hand_array.each do |card|
+            if card.face_card? == true
+                sum +=10
+            elsif card.rank == 'a' && sum <= 10
+                sum += 11
+            elsif card.rank == 'a' && sum > 10
+                sum += 1
+            else
+                sum += card.rank
+            end
         end
 
+    return sum
     end
 end
-
-
-
 
     #if you get over 21 you lose
     #all the face cards are worth 10

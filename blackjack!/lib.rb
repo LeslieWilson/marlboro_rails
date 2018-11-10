@@ -8,19 +8,69 @@ if start == 'y'
     new_deck = Deck.new
     new_deck.deal
     player_hand = Hand.new(new_deck.deal, new_deck.deal)
+    computer_hand = Hand.new(new_deck.deal, new_deck.deal)
     puts "you have an #{player_hand.card_1.rank} of #{player_hand.card_1.suite} and a #{player_hand.card_2.rank} of #{player_hand.card_2.suite} in your hand"
     player_score = player_hand.display_score
     puts "#{player_score}"
 
+
+while player_hand.display_score < 21
+
     puts 'hit or stand?'
     answer = gets.chomp
-    if answer == 'hit'
-        new_card = new_deck.deal
-        added_hand = player_hand.add_card(new_card)
-        puts "you were delt a #{new_card.rank} of #{new_card.suite} "
+
+    if answer == 'stand'
+
+            puts "Ive delt the computer #{computer_hand.card_1.rank} of #{computer_hand.card_1.suite} and a #{computer_hand.card_2.rank} of #{computer_hand.card_2.suite}"
+            computer_score = computer_hand.display_score
+            puts "#{computer_score}"
+            while computer_score < 16 && computer_score <16
+                player_hand.display_score = new_deck.deal
+                computer_hand.add_card(new_compcard)
+                puts "computer was delt a #{new_compcard.rank} of #{new_compcard.suite}"
+                new_compscore = computer_hand.display_score
+                puts "#{new_compscore}"
+                if new_compscore > 21
+                    puts 'oh crap the comp busted'
+
 
 end
 end
+            break
+
+end
+
+    if answer == 'hit'
+        new_card = new_deck.deal
+        player_hand.add_card(new_card)
+        puts "you were delt a #{new_card.rank} of #{new_card.suite} "
+        new_score = player_hand.display_score
+        puts "#{new_score}"
+        if new_score > 21
+            puts "oh crap you busted"
+        end
+
+
+end
+
+
+
+
+end
+
+if computer_hand.display_score > player_hand.display_score && computer_hand.display_score < 21
+    puts "comp wins"
+elsif
+     computer_hand.display_score < player_hand.display_score && player_hand.display_score < 21
+    puts "player wins"
+
+
+end
+end
+
+
+
+
 
 # ask them if they will hit or stand and handle for if they hit, which means dealing a new card in their hand and telling them what the new card is and calculating the new score.
 

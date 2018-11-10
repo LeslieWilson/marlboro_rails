@@ -14,32 +14,26 @@ if start == 'y'
     puts "#{player_score}"
 
 
-while player_hand.display_score < 21
+while player_hand.display_score <= 21
 
     puts 'hit or stand?'
     answer = gets.chomp
-
     if answer == 'stand'
-
             puts "Ive delt the computer #{computer_hand.card_1.rank} of #{computer_hand.card_1.suite} and a #{computer_hand.card_2.rank} of #{computer_hand.card_2.suite}"
             computer_score = computer_hand.display_score
             puts "#{computer_score}"
-            while computer_score < 16 && computer_score <16
-                player_hand.display_score = new_deck.deal
+            while computer_hand.display_score < 16
+                new_compcard = new_deck.deal
                 computer_hand.add_card(new_compcard)
                 puts "computer was delt a #{new_compcard.rank} of #{new_compcard.suite}"
                 new_compscore = computer_hand.display_score
                 puts "#{new_compscore}"
                 if new_compscore > 21
                     puts 'oh crap the comp busted'
-
-
 end
 end
-            break
-
+break
 end
-
     if answer == 'hit'
         new_card = new_deck.deal
         player_hand.add_card(new_card)
@@ -49,22 +43,13 @@ end
         if new_score > 21
             puts "oh crap you busted"
         end
-
-
 end
-
-
-
-
 end
-
 if computer_hand.display_score > player_hand.display_score && computer_hand.display_score < 21
     puts "comp wins"
 elsif
      computer_hand.display_score < player_hand.display_score && player_hand.display_score < 21
     puts "player wins"
-
-
 end
 end
 

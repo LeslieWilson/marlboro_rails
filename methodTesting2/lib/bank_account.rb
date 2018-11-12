@@ -22,7 +22,7 @@ end
 
 def summary
     result = "Account Number: #{account_number}\n"
-    result += "Initial depsit: $"
+    result += "Initial deposit: $"
 
     end
 end

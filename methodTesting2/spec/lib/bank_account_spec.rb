@@ -1,6 +1,8 @@
 require "spec_helper"
 
 RSpec.describe BankAccount do
+    let(:bank_account) {bank_account = BankAccount.new(5406327, 1000.00)}
+
     describe ".new" do
         it "takes an account number and a deposit amount as arguments" do
             bank_account = BankAccount.new(5406327, 1000.00)
@@ -25,7 +27,7 @@ RSpec.describe BankAccount do
             bank_account.add_transaction(-5.49)
             expect(bank_account.transactions).to include(-5.49)
         end
-    describe "#current balance"do
+    describe "#current balance"  do
         it "calculates the current balance" do
             bank_account = BankAccount.new(5406327, 1000.00)
             bank_account.add_transaction(-5)

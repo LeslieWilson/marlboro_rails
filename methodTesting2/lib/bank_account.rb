@@ -17,12 +17,22 @@ def current_balance
     @transactions.each do |transaction|
         result += transaction
 end
-return result
+result
 end
 
 def summary
-    result = "Account Number: #{account_number}\n"
-    result += "Initial deposit: $"
+    pretty_deposit = sprintf('%.2f',initial_deposit)
 
+    result = "Account Number: #{account_number}\n"
+    result += "Initial Deposit: $#{pretty_deposit}\n"
+    result += "Transactions:\n"
+
+    transactions.each do |transaction|
+        pretty_transaction = sprintf('%.2f',transaction)
+        result += "$#{pretty_transaction}\n"
     end
+    pretty_balance = sprintf('%.2f', current_balance)
+    result += "Current Balance: $#{pretty_balance}"
+    result
+end
 end

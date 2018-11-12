@@ -19,4 +19,10 @@ def current_balance
 end
 return result
 end
+
+def summary
+    result = "Account Number: #{account_number}\n"
+    result += "Initial depsit: $"
+
+    end
 end

@@ -31,7 +31,18 @@ RSpec.describe BankAccount do
             bank_account.add_transaction(-5)
             bank_account.add_transaction(-10)
             bank_account.add_transaction(-20)
-            expect(bank_account.current_balance). to eq(965)
+            expect(bank_account.current_balance).to eq(965)
+        end
+    end
+
+    describe "#summary" do
+        it "returns a text summary of the account" do
+            bank_account.add_transaction(-5)
+            bank_account.add_transaction(-10)
+            bank_account.add_transaction(-20)
+            expect(bank_account.summary).to include("Account Number: 5406327")
+            expect(bank_account.summary).to include ("initial deposit: $1000.00")
+            expect(bank_account.summary).to include("$-5.00")
         end
     end
     end

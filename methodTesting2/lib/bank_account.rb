@@ -1,5 +1,4 @@
 
-
 class BankAccount
     attr_accessor :account_number, :initial_deposit, :transactions
     def initialize(account_number, initial_deposit)

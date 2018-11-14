@@ -2,7 +2,7 @@ require_relative 'deck'
 require_relative 'card'
 
 class Hand
-    attr_accessor :card_1, :card_2
+    attr_accessor :card_1, :card_2, :hand_array
     def initialize(card_1, card_2)
         @card_1 = card_1
         @card_2 = card_2

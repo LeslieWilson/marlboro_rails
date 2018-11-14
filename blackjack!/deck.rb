@@ -18,6 +18,7 @@ def deal
     dealt_card = @deck_o_cards.pop
 end
 
+
 # ask them if they will hit or stand and handle for if they hit, which means dealing a new card in their hand and telling them what the new card is and calculating the new score.
 end
 

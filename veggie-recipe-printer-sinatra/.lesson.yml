@@ -1,0 +1,10 @@
+---
+title: "Veggie Recipe Printer Sinatra"
+type: "exercise"
+description: "Write a program that prints out recipes in a particular format using Ruby and ERB."
+tags: "evening-exercise, views"
+behaviors:
+  - sinatra
+ignore:
+- "veggie-recipe-printer-sinatra.md"
+- "example.rb"

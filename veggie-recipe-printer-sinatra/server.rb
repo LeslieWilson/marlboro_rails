@@ -25,11 +25,15 @@ recipe = {
     "Serve and enjoy!"
   ]
 }
+reviews =
+   [{username:"larisa","leslie","nate"}, {ratings:1,2,3}, {review:"that sucked","so tasty","goddamit my stomach hurts dude"}]
 
 get '/' do
   @name = recipe[:name]
   @ingredients = recipe[:ingredients]
   @directions = recipe[:directions]
-
+  @usernames = reviews[:usernames]
+  @review = reviews[:review]
+  @ratings = reviews[:ratings]
   erb :index
 end

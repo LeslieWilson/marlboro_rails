@@ -1,34 +1,45 @@
-<% require 'pry' %>
-<% binding.pry %>
+
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Veggie Recipe Printer</title>
-</head>
+    <head>
+      <meta charset="utf-8">
+      <title>Veggie Recipe Printer</title>
+    </head>
 
-<body>
-    <h1>Veggie Recipie Printer</h1>
+    <body>
+        <h1>Veggie Recipie Printer</h1>
 
-<ul>
-<% @ingredients.each do |ingredient| %>
+        <ul>
+            <% @ingredients.each do |ingredient| %>
+            <li>
+                <a href= "/ingredients/<%= ingredient %>"><%= ingredient %></a>
+            </li>
+            <% end %>
+        </ul>
 
-<li>
-<a href= "/ingredients/<%= ingredient %>"><%= ingredient %></a>
-</li>
-<% end %>
-</ul>
-
-<ol>
-        <% @directions.each do |direction| %>
-
-        <li>
-            <a href = "/directions/<%= direction %>"><%= direction %></a>
-        </li>
-        <% end %>
+        <ol>
+            <% @directions.each do |direction| %>
+            <li>
+                <a href = "/directions/<%= direction %>"><%= direction %></a>
+            </li>
+            <% end %>
         </ol>
 
+        <h2> Reviews </h2>
 
-</body>
+            <% @usernames.each do |username| %>
+            <% @ratings.each do |rating| %>
+
+            <li>
+                <a href = "/usernames/<%= username %>"><%= username %> </a>
+                <a href = "/ratings/<%= rating %>"><%= rating %></a>
+            </li>
+
+            <% end %>
+            <% end %>
+
+
+
+    </body>
 </html>

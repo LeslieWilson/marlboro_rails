@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+    <h1>my burning questions!</h1>
+
+    <ul>
+        <% @questions.each do |question| %>
+          <li>
+            <a href="/questions/<%= question %>"><%= question %></a>
+          </li>
+        <% end %>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+---
+title: "REST App"
+type: "article"  # challenge, exercise, article, video
+description: "Practice using HTTP to create, read, update, and delete data."
+tags: "http"
+behaviors:
+  - sinatra
+ignore:
+- "rest-app.md"

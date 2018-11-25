@@ -1,0 +1,10 @@
+---
+title: "Kickball Site"
+type: "challenge"
+description: "Build Sinatra web app."
+tags: "sinatra"
+behaviors:
+  - sinatra
+  - ruby_and_rspec
+ignore:
+- "kickball-site.md"

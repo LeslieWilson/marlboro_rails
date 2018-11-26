@@ -1,5 +1,3 @@
-require_relative "team"
-
 
 class League
   ROSTER =
@@ -53,12 +51,4 @@ class League
     }
   }
 
-  attr_reader :teams
-
-  def initialize
-    @teams = []
-    ROSTER.each do |team_name, player_positions|
-      @teams << Team.new(team_name, player_positions)
-    end
   end
-end

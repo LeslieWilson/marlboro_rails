@@ -1,12 +1,4 @@
 
-
-#
-# twenty = 0<49
-# puts debug @twenty
-#
-# end
-
-
 puts "hi, input the amount of snow your received in cubic ft and I'll give you a quote"
 input = gets.chomp
 if input.to_f >= 0 && input.to_i <= 49

@@ -9,10 +9,12 @@ get "/items/:item_name" do
   @item_name = params[:item_name]
   erb :show
 end
-binding.pry
+
 post "/items" do
+binding.pry
+item = params["item_name"]
+File.open("items.txt", "a") do |file|
+    file.puts(item)
+end
 redirect "/items"
 end
-
-
-#erb links you to something in the views folder

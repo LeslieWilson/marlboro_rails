@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,16 +9,21 @@
   </head>
 
   <body>
-    <h1>my burning questions!</h1>
+    <h1>index item list for server</h1>
 
     <ul>
-        <% @questions.each do |question| %>
+        <% @items.each do |item| %>
           <li>
-            <a href="/questions/<%= question %>"><%= question %></a>
+            <a href="/items/<%= item %>"><%= item %></a>
           </li>
         <% end %>
     </ul>
 
-    
+<form action= "/items" method= "post">
+    <label for = "item_name">Additional Index Item:</label>
+    <input type = "text" id= "item_name" name= "item_name">
+    <input type = "submit">
+</form>
+
   </body>
 </html>

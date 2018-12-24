@@ -7,7 +7,7 @@ def add_some_numbers():
     while borginput != '':
         borginput = input()
         array_of_numbers.append(borginput)
-        set_trace()
+        
     for i in array_of_numbers:
         blahsum +=  i
         return blahsum

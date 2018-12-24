@@ -1,0 +1,9 @@
+<h1>The High-Tech Recipe Evaluation Machine</h1>
+
+<% if @is_delicious %>
+  <h3>"<%= @recipe_name %>" is a delicious recipe!</h3>
+<% else %>
+  <h3>"<%= @recipe_name %>" is not a delicious recipe!</h3>
+<% end %>
+
+<a href="/">Try again!</a>

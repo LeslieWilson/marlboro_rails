@@ -1,4 +1,3 @@
-require 'pry'
 
 def add_some_numbers
     puts "type a number you would like to add"

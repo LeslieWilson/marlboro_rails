@@ -1,0 +1,11 @@
+---
+title: "Acceptance Testing Pickled Beets"
+type: "exercise"
+description: "Writing simple acceptance tests for a Pickled Beets Recipe site"
+tags: "acceptance-testing, capybara, testing"
+behaviors:
+  - sinatra
+  - capybara
+  - ruby_and_rspec
+ignore:
+- "acceptance-testing-pickled-beets.md"

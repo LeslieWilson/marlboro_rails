@@ -1,0 +1,11 @@
+---
+title: "Grocery List: Sinatra"
+type: "challenge"
+description: "Display and append to a list of groceries via a web application."
+tags: "sinatra, http"
+behaviors:
+  - sinatra
+  - ruby_and_rspec
+  - capybara
+ignore:
+- "grocery-list-sinatra.md"

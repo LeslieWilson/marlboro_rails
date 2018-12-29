@@ -13,7 +13,7 @@ get "/items/:thirty" do
 end
 
 post "/items" do
-item = params["item_name"]
+item = params[:item_name]
 File.open("items.txt", 'a') do |file|
     file.puts(item)
 end

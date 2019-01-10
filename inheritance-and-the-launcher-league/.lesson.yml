@@ -1,0 +1,9 @@
+---
+title: "Inheritance and The Launcher League"
+type: "exercise"
+description: "Can you save these `super`-heroes?"
+tags: "oop, inheritance"
+behaviors:
+  - ruby_and_rspec
+ignore:
+- "inheritance-and-the-launcher-league.md"

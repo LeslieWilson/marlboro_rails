@@ -1,0 +1,10 @@
+---
+title: "News Aggregator: PostgreSQL"
+type: "challenge"
+description: "Persist user-submitted data to a PostgreSQL database."
+tags: "sql"
+behaviors:
+  - sinatra
+  - ruby_and_rspec
+ignore:
+- "news-aggregator-postgresql.md"

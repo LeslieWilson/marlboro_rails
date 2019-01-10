@@ -1,0 +1,32 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+  <body>
+    <h1>index item list for server</h1>
+
+    <ul>
+        <% @items.each do |item| %>
+          <li>
+            <a href="/items/<%= item %>"><%= item %></a>
+          </li>
+        <% end %>
+    </ul>
+
+<form action= "/items" method= "post">
+    <label for = "item_name">Additional Index Item:</label>
+    <input type = "text" id= "item_name" name= "item_name">
+    <input type = "submit">
+
+
+</form>
+
+
+  </body>
+</html>

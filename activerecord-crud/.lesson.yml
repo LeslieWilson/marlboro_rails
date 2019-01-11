@@ -1,0 +1,10 @@
+---
+title: "ActiveRecord: CRUD"
+type: "article"
+description: "Learn how CRUD actions work in ActiveRecord."
+behaviors:
+  - sinatra
+  - sinatra_activerecord
+  - ruby_and_rspec
+  - capybara
+tags: "activerecord, sql, crud"

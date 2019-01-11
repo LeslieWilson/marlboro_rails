@@ -1,0 +1,9 @@
+---
+title: "Factory Bot Sinatra"
+type: "article"
+description: "Simplify test setup by using predefined factories with the factory_bot gem."
+behaviors:
+   - sinatra
+   - ruby_and_rspec
+   - sinatra_activerecord
+tags: "testing, tdd, factory_bot"

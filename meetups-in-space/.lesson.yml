@@ -1,0 +1,13 @@
+---
+title: "Meetups in Space"
+type: "challenge"
+description: "Build a web app with Sinatra and Active Record to find places to hang out in space."
+tags: "sinatra, activerecord, migrations, er-diagrams"
+behaviors:
+  - sinatra
+  - sinatra_activerecord
+  - ruby_and_rspec
+  - capybara
+ignore:
+- "meetups-in-space.md"
+- ".env"

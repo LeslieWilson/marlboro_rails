@@ -1,5 +1,6 @@
 require 'sinatra'
 require_relative 'config/application'
+require 'pry'
 
 set :bind, '0.0.0.0'  # bind to all interfaces
 
@@ -21,7 +22,7 @@ get '/auth/github/callback' do
   user = User.find_or_create_from_omniauth(env['omniauth.auth'])
   session[:user_id] = user.id
   flash[:notice] = "You're now signed in as #{user.username}!"
-
+binding.pry
   redirect '/'
 end
 

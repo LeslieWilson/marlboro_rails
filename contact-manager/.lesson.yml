@@ -1,0 +1,11 @@
+---
+title: "Contact Manager"
+type: "exercise"
+description: "Integrate ActiveRecord into a Sinatra application."
+tags: "sinatra, activerecord"
+behaviors:
+  - sinatra
+  - sinatra_activerecord
+  - ruby_and_rspec
+ignore:
+- "contact-manager.md"

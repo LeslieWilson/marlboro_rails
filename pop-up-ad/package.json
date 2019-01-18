@@ -1,0 +1,29 @@
+{
+  "name": "pop-up-ad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --host 0.0.0.0 --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "~6.23.1",
+    "babel-loader": "~6.3.2",
+    "babel-preset-env": "~1.6.1",
+    "babel-preset-react": "~6.22.0",
+    "css-loader": "^0.26.2",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
+    "webpack": "~2.3.1",
+    "webpack-dev-server": "~2.4.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "react": "~15.4.2",
+    "react-dom": "~15.4.2"
+  }
+}

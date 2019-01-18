@@ -1,0 +1,10 @@
+---
+title: "Pop-up Ad"
+type: "exercise"
+description: "Make a pop-up ad using React"
+tags: "javascript, react"
+behaviors:
+  - react_on_node
+ignore:
+- "node_modules/"
+- "pop-up-ad.md"

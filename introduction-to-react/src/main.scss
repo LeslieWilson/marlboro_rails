@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto|Inconsolata);
+
+$dove-gray: #646464;
+$athens-gray: #F6F6F7;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+body {
+  font-family:  Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: $dove-gray;
+  background-color: $athens-gray;
+  margin: 0 10%;
+}

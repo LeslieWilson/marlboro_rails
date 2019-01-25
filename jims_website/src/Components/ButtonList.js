@@ -17,7 +17,6 @@ const ButtonList = props => {
                 < i className= "fa fa-5x fa-fw fa-user-md" onClick={() => alert(mphDescription)}/> -
             fartmouth medical school
 
-<img src={require("https://giphy.com/gifs/goofy-demo-camouflage-V1NxC1YoNEHBe")} alt="loading..." />
 
 
 

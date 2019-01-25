@@ -14,3 +14,6 @@ const Icon = props => {
 };
 
 export default Icon;
+
+
+<i class="fas fa-user-md"></i>

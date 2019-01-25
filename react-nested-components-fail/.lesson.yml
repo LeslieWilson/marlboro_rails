@@ -1,0 +1,7 @@
+---
+title: "React Nested Components"
+type: "article"
+description: "Learn about nested components in React"
+behaviors:
+  - "react_on_node"
+tags: "javascript, react, nested components"

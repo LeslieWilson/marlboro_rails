@@ -7,5 +7,6 @@ import IconGuide from './components/IconGuide';
 
 ReactDOM.render(
   <IconGuide />,
+  
   document.getElementById('app')
 );

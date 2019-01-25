@@ -17,8 +17,3 @@ const IconGuide = props => {
 
 
 export default IconGuide;
-
-<i class="fas fa-user-md"></i>
-
-
-<i class="fal fa-atom"></i>

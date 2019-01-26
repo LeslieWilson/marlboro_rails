@@ -1,0 +1,7 @@
+---
+title: "React Synthetic Events"
+type: "article"
+description: "Learn about synthetic events in React"
+behaviors:
+  - react_on_node
+tags: "javascript, react, synthetic events"

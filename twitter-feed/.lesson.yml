@@ -1,0 +1,10 @@
+---
+title: "Twitter Feed"
+type: "exercise"
+description: "Render a static Twitter feed with React stateless components"
+tags: "javascript, react, stateless components"
+behaviors:
+  - react_on_node
+ignore:
+- "node_modules/"
+- "twitter-feed.md"

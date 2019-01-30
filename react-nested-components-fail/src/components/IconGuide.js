@@ -12,8 +12,4 @@ const IconGuide = props => {
 };
 
 
-
-
-
-
 export default IconGuide;

@@ -1,4 +1,24 @@
 /* YOUR STYLING HERE */
-.userName, .txt{
+.userName, .screen_name, .timestamp_ms{
+    float:left;
+    padding:2px;
+    
+}
+
+.txt{
     text-align: center;
+}
+
+.tweet{
+    border:1px solid black;
+    padding:1px;
+    margin:2px 60px;
+}
+.profile_img{
+    float:left;
+    padding:5px;
+}
+
+.headers{
+    display:inline-block;
 }

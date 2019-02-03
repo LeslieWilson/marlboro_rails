@@ -8,13 +8,14 @@ let tweets = props.data.map(tweet => {
     return(
         <Tweet
         key = {tweet.id_str}
-        userName={tweet.user.name}
-        screen_name={tweet.user.screen_name}
         profile_img={tweet.user.profile_image_url}
+        userName={tweet.user.name}
+        
+        timestamp_ms={tweet.timestamp_ms}
+        screen_name={tweet.user.screen_name}
         txt={tweet.text}
         retweet_count={tweet.retweet_count}
-
-
+        favorite_count={tweet.favorite_count}
 
 
         />

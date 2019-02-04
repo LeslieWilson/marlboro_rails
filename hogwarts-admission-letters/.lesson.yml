@@ -1,0 +1,10 @@
+---
+title: "Hogwarts Admission Letters"
+type: "exercise"
+description: "Help Hogwarts write admission letters using React"
+tags: "javascript, react, stateful components"
+behaviors:
+  - react_on_node
+ignore:
+- "node_modules/"
+- "hogwarts-admission-letters.md"

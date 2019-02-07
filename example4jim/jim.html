@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <script>
+        window.addEventListener("mousedown",function(event){
+         alert("window");
+         console.log(event);
+        });
+        </script>
+        <p id ='p'>hi there</p>
+
+        <button id ='btn' onclick="myFunction()">click me</button>
+
+        <script>
+function myFunction() {
+    document.getElementById("p").style.color = "red";
+}
+</script>
+    </body>
+</html>

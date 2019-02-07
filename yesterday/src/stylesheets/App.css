@@ -1,0 +1,12 @@
+.unclicked{
+    background-color: blue;
+}
+
+.clicked{
+    background-color: red;
+    font-weight: bold;
+}
+
+.rylan{
+    color:white;
+}

@@ -1,0 +1,43 @@
+body {
+  background: url(http://idsgn.org/images/business-cards-from-cereal-boxes/cereal_boxes.jpg);
+  margin: 0;
+}
+
+a {
+  opacity: 1.0;
+}
+
+a:visited {
+  color: #ff9900;
+}
+
+.content {
+  opacity: 1.0;
+  background: #fff1bc;
+  padding-top: 1px;
+  opacity: 0.9;
+  padding: 20px
+}
+
+.navbar {
+  background: #FFD000;
+  padding: 10px;
+  border: 1px #ff9900 solid;
+}
+
+.back-button {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.page-title {
+  text-align: center;
+}
+
+.so-great {
+  text-align: center;
+}
+
+.cereal-name {
+  font-family: 'Abril Fatface', cursive;
+}

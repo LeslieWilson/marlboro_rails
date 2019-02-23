@@ -1,0 +1,30 @@
+
+<html>
+    <head>
+    <meta name="wallball" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body onload="init()">
+        <div class='header'>
+            <h1 class='title'>SAD PONY PING PONG</h1>
+            <p class ='warning'>Pony gets sad every time you fail! Pony will CRASH YOUR F**KING BROWSER if you miss too much...</p>
+            <h2 class='score' id='score'></h2>
+            <h3 class='score'>Press SpaceBar to start!</h3>
+            <button onclick="changeLevel(1)">level 1</button>
+            <button onclick="changeLevel(2)">level 2</button>
+            <button onclick="changeLevel(3)">level 3</button>
+        </div>
+        <div id='app' class='container'>
+            <canvas id="myCanvas" class='canvas'>
+            </canvas>
+        </div>
+        <div class='img' id= 'img'>
+
+        </div>
+
+        <div class='footer'>
+            <p>© 2019 Faza 'Jimmy' Hikmatullah, Leslie Wilson, Julian Jaffe All Rights Reserved</p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

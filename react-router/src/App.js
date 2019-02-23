@@ -1,6 +1,6 @@
 import React from 'react';
 import { Router, browserHistory, Route, IndexRoute } from 'react-router';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import BreakfastCerealsContainer from './containers/BreafastCerealsContainer';
 import BreakfastCerealShowContainer from './containers/BreakfastCerealShowContainer';
 

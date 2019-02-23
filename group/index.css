@@ -1,0 +1,54 @@
+.container {
+    border: 7px solid purple;
+    background-color: pink;
+
+}
+
+.canvas {
+    background-color: rgb(58, 1, );
+}
+
+
+.header {
+    text-align:center;
+}
+
+.title {
+    font-style: italic;
+    font-size: 20px;
+    color: pink;
+    background-color: black;
+    font-weight: bolder;
+
+}
+
+.directions{
+    font-size: 40px;
+    color:black;
+    font-style:oblique;
+    font-weight: bolder;
+}
+
+.warning {
+    font-size: 30px;
+    color: red;
+    font-style:normal;
+    font-weight: bolder;
+    text-align: left;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+html {
+    background: url(http://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif) no-repeat center center fixed;
+    background-size:cover;
+    height:100%;
+
+}
+
+.score {
+    background-color: white;
+}
+
+body {
+    height: 100%;
+}
